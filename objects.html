@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+let collection=[
+    {name:"Aruljk",age:"25",sex:"male",role:"developer"},
+    {name:"vijay",age:"50",sex:"male",role:"actor"},
+    {name:"sachin",age:"58",sex:"male",role:"batsman"},
+    {name:"rohit",age:"38",sex:"male",role:"batsman"}  
+]
+for(let key of collection){
+
+
+ let div=document.createElement("div");
+ document.body.appendChild(div);
+
+ let l1=document.createElement("li"),
+  l2=document.createElement("li"),
+  l3=document.createElement("li"),
+  l4=document.createElement("li");
+
+  l1.innerText=key.name;
+  l2.innerText=key.age
+  l3.innerText=key.sex
+  l4.innerText=key.role
+
+
+div.appendChild(l1),
+div.appendChild(l2),
+div.appendChild(l3),
+div.appendChild(l4);
+}
+
+ let a={
+    easy:"wow",
+    easy1:"wos1",
+    easy2:"wow2"
+ }
+ for(let jk in a){
+    console.log(a.easy1)
+ }
+
+
+   </script> 
+</body>
+</html>
